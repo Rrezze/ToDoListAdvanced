@@ -1,0 +1,7 @@
+body {
+background-color: #D3EEFF;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Irish Grover", system-ui;
+}

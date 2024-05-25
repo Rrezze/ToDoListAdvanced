@@ -1,0 +1,60 @@
+.boards-container{
+    place-items: center;
+    display: grid;
+    padding-inline:2%;
+    padding-block: 2%;
+    grid-template-columns: repeat(3, 1fr);
+}
+.main-board{
+    background-color: aliceblue;
+    margin-top: 2%;
+    width: 95%;
+    height: fit-content;
+    min-height: 20vh;
+    position: relative;
+    padding-block: 0.5%;
+}
+.board-label {
+    display: flex;
+    margin-top: -4.5%;
+    justify-content: center;
+    align-items: center;
+}
+.label-text {
+    background-color: bisque;
+    min-width: 30%;
+    font-size: 150%;
+    padding-inline: 3%;
+    text-align: center;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.board-btn {
+    all: unset;
+    background-color: #D3EEFF;
+    padding: 2% 7%;
+    cursor: pointer;
+    transition: 1s background-color ease-in-out;
+}
+button.board-btn:hover {
+    background-color: bisque;
+}
+.board-items {
+    border: solid 0.5px lightgray;
+    margin: 2% 3%;
+    padding: 2%;
+    min-height: 20px;
+}
+.list-items {
+    border: solid 0.5px lightgray;
+}
+.content-board {
+    height: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
