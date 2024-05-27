@@ -1,25 +1,29 @@
-.boards-container{
+.boards-container {
     place-items: center;
     display: grid;
-    padding-inline:2%;
+    padding-inline: 2%;
     padding-block: 2%;
     grid-template-columns: repeat(3, 1fr);
 }
-.main-board{
+
+.main-board {
     background-color: aliceblue;
     margin-top: 2%;
     width: 95%;
-    height: fit-content;
+    height: auto; 
     min-height: 20vh;
     position: relative;
     padding-block: 0.5%;
+    box-shadow: -5px 5px 15px 3px #7da9b7;
 }
+
 .board-label {
     display: flex;
     margin-top: -4.5%;
     justify-content: center;
     align-items: center;
 }
+
 .label-text {
     background-color: bisque;
     min-width: 30%;
@@ -27,12 +31,14 @@
     padding-inline: 3%;
     text-align: center;
 }
+
 .btn-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
+
 .board-btn {
     all: unset;
     background-color: #D3EEFF;
@@ -40,20 +46,26 @@
     cursor: pointer;
     transition: 1s background-color ease-in-out;
 }
+
 button.board-btn:hover {
     background-color: bisque;
 }
+
 .board-items {
     border: solid 0.5px lightgray;
     margin: 2% 3%;
     padding: 2%;
     min-height: 20px;
+    box-sizing: border-box; /* Ensure padding and border are included in width and height */
 }
-.list-items {
-    border: solid 0.5px lightgray;
-}
+
 .content-board {
-    height: 17vh;
+    /* display: flex;
+    flex-direction: column;
+    gap: 2%; 
+    justify-content: space-between; */
+
+    min-height: 17vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

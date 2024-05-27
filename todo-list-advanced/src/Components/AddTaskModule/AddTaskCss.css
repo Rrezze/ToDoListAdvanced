@@ -1,0 +1,66 @@
+.addTaskBackground{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #d3eeff69;
+}
+.task-popup {
+    border: 0.5px solid lightblue;
+    box-shadow: 10px 14px 21px 5px lightblue;
+    height: 40vh;
+    background-color: aliceblue;
+    width: 40vw;
+}
+.add-task-title {
+    text-align: center;
+    margin-top: -2.5%;
+    padding: 1% 3%;
+    background-color: bisque;
+    width: fit-content;
+}
+.title-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form-container {
+    padding-inline: 10%;
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.task-input {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.btn-task{
+    all: unset;
+    width: fit-content;
+    background-color: #D3EEFF;
+    padding: 2% 7%;
+    cursor: pointer;
+    transition: 1s background-color ease-in-out;
+}
+
+.btn-task:hover {
+    background-color: bisque;
+}
+.task-input input:focus{
+    border: 1px solid lightskyblue;
+    box-shadow: 0px 0px 5px 1px lightskyblue;
+    
+}
+.task-input input {
+    all: unset;
+    font-size: 150%;
+    padding-inline: 1%;
+    border: 1px solid lightblue;
+    transition: 1s height ease-in-out;
+}
